@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  width: 300px;
+  display: grid;
+  grid-template-columns: minmax(100px, max-content);
+  justify-items: center;
+  align-items: center;
+}
+#label_nom {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  justify-self: start;
+}
+#nom {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+#label_prenom {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+  justify-self: start;
+}
+#prenom {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+#reset_btn {
+  padding: 5px;
+  grid-column: 1 / 1;
+  grid-row: 3 / 3;
+}
+#submit_btn {
+  padding: 5px;
+  grid-column: 2 / 2;
+  grid-row: 3 / 3;
+}
+label,
+input {
+  margin: 10px;
+}
+p {
+  margin: 10px;
+}
+/* .flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* label {
+  width: 100px;
+} */
